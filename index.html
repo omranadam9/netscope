@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>سياسة الخصوصية | NetScope Privacy Policy</title>
+<meta name="description" content="NetScope لا يجمع بياناتك. الفحص يتم محلياً داخل شبكتك.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d2231; --ink-2:#1b3a4f; --text:#14212b; --muted:#566673;
+  --bg:#f2f6f8; --surface:#ffffff; --line:#d8e2e8; --signal:#14b8a6; --signal-ink:#0b7a6e;
+  --hero-text:#eaf6f6; --hero-muted:#9fbac4;
+  --font:"IBM Plex Sans Arabic","Segoe UI",Tahoma,system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --text:#e4edf1; --muted:#93a8b3; --bg:#0a1620; --surface:#10212d; --line:#1f3646; --signal-ink:#4fd8c8;
+  }
+}
+:root[data-theme="dark"]{--text:#e4edf1;--muted:#93a8b3;--bg:#0a1620;--surface:#10212d;--line:#1f3646;--signal-ink:#4fd8c8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.85;font-size:17px;
+  padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--signal-ink)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:4px}
 
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--ink);color:var(--hero-text);
+  padding:calc(28px + env(safe-area-inset-top,0px)) 24px 72px}
+.hero svg.rings{position:absolute;inset-inline-end:-120px;top:-60px;width:560px;max-width:none;opacity:.9;pointer-events:none}
+.bar{position:relative;max-width:880px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;letter-spacing:.2px}
+.brand i{width:12px;height:12px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 5px rgba(20,184,166,.25)}
+.lang{font:inherit;font-size:14px;font-weight:600;color:var(--hero-text);background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.25);padding:7px 16px;border-radius:999px;cursor:pointer}
+.lang:hover{background:rgba(255,255,255,.16)}
+.hero-body{position:relative;max-width:880px;margin:64px auto 0}
+.hero h1{margin:0 0 14px;font-size:clamp(34px,6.5vw,56px);line-height:1.2;font-weight:700;max-width:14em}
+.hero p{margin:0;max-width:34em;color:var(--hero-muted);font-size:18px}
+.stamp{margin-top:26px;font-size:14px;color:var(--hero-muted)}
+
+/* Promise strip */
+.promise{max-width:880px;margin:-34px auto 0;padding:0 24px;position:relative}
+.promise ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);
+  background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  box-shadow:0 18px 40px -22px rgba(13,34,49,.45)}
+.promise li{padding:20px 22px;display:flex;flex-direction:column;gap:2px}
+.promise li+li{border-inline-start:1px solid var(--line)}
+.promise b{font-size:19px;color:var(--signal-ink)}
+.promise span{font-size:14px;color:var(--muted);line-height:1.6}
+
+/* Content */
+main{max-width:880px;margin:0 auto;padding:56px 24px 40px;display:grid;gap:44px}
+section h2{margin:0 0 12px;font-size:24px;line-height:1.4;padding-inline-start:16px;border-inline-start:4px solid var(--signal)}
+section p{margin:0 0 12px;max-width:44em}
+section ul{margin:0;padding-inline-start:22px;max-width:44em}
+section li{margin-bottom:6px}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:15px;line-height:1.7}
+th,td{padding:13px 18px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{font-weight:600;color:var(--muted);font-size:14px;background:color-mix(in srgb,var(--bg) 70%,var(--surface))}
+td:first-child{font-weight:600;white-space:nowrap}
+.yes{color:#b45309}.no{color:var(--signal-ink);font-weight:600}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .yes{color:#f6b45a}}
+.note{max-width:44em;padding:16px 20px;border-radius:14px;background:color-mix(in srgb,var(--signal) 12%,var(--surface));
+  border:1px solid color-mix(in srgb,var(--signal) 40%,var(--line));font-size:16px}
+footer{max-width:880px;margin:0 auto;padding:28px 24px 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+
+/* Language switching */
+html[lang="ar"] [lang="en"], html[lang="en"] [lang="ar"]{display:none!important}
+html[lang="en"] body{font-size:16.5px;line-height:1.75}
+html[lang="en"] .hero svg.rings{transform:scaleX(-1)}
+
+@media (max-width:680px){
+  .promise ul{grid-template-columns:1fr}
+  .promise li+li{border-inline-start:0;border-top:1px solid var(--line)}
+  .hero{padding-bottom:64px}.hero-body{margin-top:44px}
+  .hero svg.rings{width:420px;inset-inline-end:-170px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pulse{animation:none!important}}
+.pulse{transform-origin:center;animation:ping 3.6s ease-out 1}
+@keyframes ping{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="rings" viewBox="0 0 560 560" aria-hidden="true" fill="none" stroke="#14b8a6">
+    <circle class="pulse" cx="280" cy="280" r="60" stroke-opacity=".55"/>
+    <circle class="pulse" cx="280" cy="280" r="120" stroke-opacity=".38"/>
+    <circle class="pulse" cx="280" cy="280" r="180" stroke-opacity=".24"/>
+    <circle class="pulse" cx="280" cy="280" r="240" stroke-opacity=".14"/>
+    <circle cx="280" cy="280" r="7" fill="#14b8a6" stroke="none"/>
+    <circle cx="372" cy="196" r="5" fill="#9fe7df" stroke="none"/>
+    <circle cx="170" cy="352" r="5" fill="#9fe7df" stroke="none"/>
+    <circle cx="352" cy="404" r="4" fill="#9fe7df" stroke="none"/>
+  </svg>
+  <div class="bar">
+    <div class="brand"><i></i>NetScope</div>
+    <button class="lang" id="langBtn" type="button" aria-label="Switch language">English</button>
+  </div>
+  <div class="hero-body">
+    <h1 lang="ar">شبكتك تبقى لك. لا نجمع أي بيانات.</h1>
+    <h1 lang="en">Your network stays yours. We collect nothing.</h1>
+    <p lang="ar">NetScope مستكشف للشبكة والراوتر. يفحص الأجهزة داخل شبكتك المحلية فقط، ويحتفظ بالنتائج على جهازك، ولا يعرض أي إعلانات.</p>
+    <p lang="en">NetScope is a network and router explorer. It scans your local network only, keeps results on your device, and shows no ads.</p>
+    <div class="stamp" lang="ar">سياسة الخصوصية — آخر تحديث: 8 أكتوبر 2026</div>
+    <div class="stamp" lang="en">Privacy Policy — Last updated: October 8, 2026</div>
+  </div>
+</header>
+
+<div class="promise">
+  <ul>
+    <li><b lang="ar">بلا إعلانات</b><b lang="en">No ads</b>
+      <span lang="ar">لا إعلانات ولا شبكات إعلانية.</span><span lang="en">No ads, no ad networks.</span></li>
+    <li><b lang="ar">بلا تتبّع</b><b lang="en">No tracking</b>
+      <span lang="ar">لا تحليلات ولا حسابات ولا ملفات تعريف.</span><span lang="en">No analytics, accounts, or profiles.</span></li>
+    <li><b lang="ar">فحص محلي</b><b lang="en">Local scanning</b>
+      <span lang="ar">نتائج الفحص تبقى على جهازك.</span><span lang="en">Scan results stay on your device.</span></li>
+  </ul>
+</div>
+
+<main>
+
+<section lang="ar">
+  <h2>ما الذي يفعله التطبيق</h2>
+  <p>يكتشف NetScope الأجهزة المتصلة بالراوتر ويعرض اسم كل جهاز وعنوان IP وعنوان الماك، ويحدد عنوان الراوتر ونوعه، ويدعم تسجيل الدخول ومراقبة راوترات MikroTik، ويحتفظ بسجل للأجهزة التي اتصلت سابقاً، ويمكنه الفحص التلقائي لمعرفة من يدخل الشبكة ويخرج منها.</p>
+</section>
+<section lang="en">
+  <h2>What the app does</h2>
+  <p>NetScope discovers the devices connected to your router and shows each device's name, IP address and MAC address. It identifies your router's address and brand, supports sign-in and monitoring for MikroTik routers, keeps a history of devices that connected before, and can scan automatically to show who joins and leaves your network.</p>
+</section>
+
+<section lang="ar">
+  <h2>ما نجمعه</h2>
+  <p>لا شيء. لا نجمع بياناتك الشخصية ولا بيانات شبكتك، ولا نملك خوادم تستقبل أي معلومات من التطبيق. لا توجد حسابات، ولا أدوات تحليل أو تتبّع، ولا مكتبات إعلانية.</p>
+</section>
+<section lang="en">
+  <h2>What we collect</h2>
+  <p>Nothing. We do not collect your personal data or your network data, and we run no servers that receive information from the app. There are no accounts, no analytics or tracking tools, and no advertising libraries.</p>
+</section>
+
+<section lang="ar">
+  <h2>ما يصل إليه التطبيق على جهازك</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>العنصر</th><th>لماذا</th><th>هل يغادر جهازك؟</th></tr></thead>
+    <tbody>
+      <tr><td>الشبكة المحلية</td><td>فحص الأجهزة وقراءة أسمائها وعناوينها (IP وMAC) داخل شبكتك.</td><td class="no">لا</td></tr>
+      <tr><td>الموقع أثناء الاستخدام</td><td>يطلبه iOS لعرض اسم شبكة Wi-Fi. لا نقرأ موقعك الجغرافي ولا نحفظه.</td><td class="no">لا</td></tr>
+      <tr><td>بيانات دخول MikroTik</td><td>تدخلها بنفسك لمراقبة الراوتر. تُحفظ على جهازك وتُرسل إلى الراوتر فقط.</td><td class="no">لا (للراوتر فقط)</td></tr>
+      <tr><td>سجل الأجهزة والإعدادات</td><td>لعرض الأجهزة السابقة وتذكّر تفضيلاتك مثل اللغة والفحص التلقائي.</td><td class="no">لا</td></tr>
+      <tr><td>فحص السرعة</td><td>يتصل باختبار السرعة من Cloudflare، فيرى Cloudflare عنوان IP العام لشبكتك كأي اتصال إنترنت.</td><td class="yes">اتصال بجهة خارجية</td></tr>
+      <tr><td>معلومات الشبكة العامة</td><td>لعرض عنوانك العام، يطلب التطبيق ذلك من خدمة ipwho.is عند فتح شاشة معلومات الشبكة.</td><td class="yes">اتصال بجهة خارجية</td></tr>
+    </tbody>
+  </table></div>
+  <p style="margin-top:14px">الاتصالان الأخيران هما الوحيدان اللذان يخرجان من شبكتك، ويحدثان فقط عندما تستخدم هاتين الميزتين. تخضع بيانات هاتين الجهتين لسياسات الخصوصية الخاصة بهما.</p>
+</section>
+<section lang="en">
+  <h2>What the app can access on your device</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Item</th><th>Why</th><th>Leaves your device?</th></tr></thead>
+    <tbody>
+      <tr><td>Local network</td><td>To scan devices and read their names and addresses (IP and MAC) inside your network.</td><td class="no">No</td></tr>
+      <tr><td>Location while in use</td><td>Required by iOS to show your Wi-Fi network name. We do not read or store your geographic location.</td><td class="no">No</td></tr>
+      <tr><td>MikroTik credentials</td><td>Entered by you to monitor your router. Stored on your device and sent only to your router.</td><td class="no">No (router only)</td></tr>
+      <tr><td>Device history and settings</td><td>To show past devices and remember preferences such as language and auto-scan.</td><td class="no">No</td></tr>
+      <tr><td>Speed test</td><td>Connects to Cloudflare's speed test, so Cloudflare sees your network's public IP address like any internet connection.</td><td class="yes">Third-party connection</td></tr>
+      <tr><td>Public network info</td><td>To show your public address, the app queries ipwho.is when you open the network info screen.</td><td class="yes">Third-party connection</td></tr>
+    </tbody>
+  </table></div>
+  <p style="margin-top:14px">The last two are the only connections that leave your network, and they happen only when you use those features. Those services are governed by their own privacy policies.</p>
+</section>
+
+<section lang="ar">
+  <h2>أين تُحفظ بياناتك</h2>
+  <p>كل ما يحفظه التطبيق (سجل الأجهزة، التفضيلات، وبيانات دخول الراوتر) يبقى داخل جهازك. نحن لا نستطيع الاطلاع عليه. عند حذف التطبيق تُحذف هذه البيانات معه، ويمكنك أيضاً مسح السجل من داخل التطبيق.</p>
+  <div class="note">أنت مسؤول عن الراوتر الذي تفحصه. استخدم NetScope على شبكاتك أو الشبكات التي لديك إذن بفحصها فقط.</div>
+</section>
+<section lang="en">
+  <h2>Where your data lives</h2>
+  <p>Everything the app stores (device history, preferences, and router credentials) stays on your device. We cannot see it. Deleting the app deletes this data, and you can also clear the history from inside the app.</p>
+  <div class="note">You are responsible for the network you scan. Use NetScope only on your own networks or networks you have permission to scan.</div>
+</section>
+
+<section lang="ar">
+  <h2>الإعلانات وأطراف ثالثة</h2>
+  <p>لا يعرض NetScope إعلانات، ولا نبيع بياناتك أو نشاركها مع أي جهة. الاتصالان المذكوران أعلاه (Cloudflare وipwho.is) هما الجهتان الخارجيتان الوحيدتان.</p>
+</section>
+<section lang="en">
+  <h2>Ads and third parties</h2>
+  <p>NetScope shows no ads, and we never sell or share your data. The two connections listed above (Cloudflare and ipwho.is) are the only third parties involved.</p>
+</section>
+
+<section lang="ar">
+  <h2>الأطفال</h2>
+  <p>لا يجمع التطبيق بيانات من أي مستخدم، بما فيهم الأطفال، ولا يوجّه محتواه لهم.</p>
+</section>
+<section lang="en">
+  <h2>Children</h2>
+  <p>The app collects no data from any user, including children, and is not directed at them.</p>
+</section>
+
+<section lang="ar">
+  <h2>التغييرات على هذه السياسة</h2>
+  <p>إذا تغيّر ما يفعله التطبيق بالبيانات، سنحدّث هذه الصفحة ونغيّر تاريخ آخر تحديث أعلاها.</p>
+</section>
+<section lang="en">
+  <h2>Changes to this policy</h2>
+  <p>If what the app does with data changes, we will update this page and the "last updated" date at the top.</p>
+</section>
+
+<section lang="ar">
+  <h2>تواصل معنا</h2>
+  <p>لأي سؤال عن الخصوصية، راسلنا على <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+</section>
+<section lang="en">
+  <h2>Contact</h2>
+  <p>For any privacy question, write to us at <a href="omran_adam@yahoo.com">your-email@example.com</a>.</p>
+</section>
+
+</main>
+
+<footer>
+  <span lang="ar">© 2026 NetScope. جميع الحقوق محفوظة.</span>
+  <span lang="en">© 2026 NetScope. All rights reserved.</span>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('langBtn');
+  function set(l){
+    root.lang=l; root.dir=(l==='ar')?'rtl':'ltr';
+    btn.textContent=(l==='ar')?'English':'العربية';
+    document.title=(l==='ar')?'سياسة الخصوصية | NetScope':'Privacy Policy | NetScope';
+    try{localStorage.setItem('ns-lang',l)}catch(e){}
+  }
+  var saved=null;
+  try{saved=localStorage.getItem('ns-lang')}catch(e){}
+  if(!saved && /^(en)/i.test(navigator.language||'') ) saved='en';
+  set(saved==='en'?'en':'ar');
+  btn.addEventListener('click',function(){set(root.lang==='ar'?'en':'ar')});
+})();
+</script>
+</body>
+</html>
